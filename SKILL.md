@@ -9,8 +9,8 @@ Arg = `$ARGUMENTS`. Se vuoto o sconosciuto: NON eseguire nulla, rispondi solo:
 - `/skiller next`: mostra la successiva
 - `/skiller install`: installa quella mostrata"
 
-Altrimenti esegui UN solo comando Bash, poi rispondi copiando l'output così com'è come markdown (MAI in un blocco di codice) + al massimo una riga. Niente altro.
+Altrimenti esegui UN solo comando Bash (timeout 600000: se mancano Node, GitHub CLI o l'accesso a GitHub li installa/collega da solo; se l'output chiede di inserire un codice, mostralo subito all'utente), poi rispondi copiando l'output così com'è come markdown (MAI in un blocco di codice) + al massimo una riga. Niente altro.
 
-- `search` (eventuali parole extra = focus): ricava dal contesto della sessione 2-4 parole chiave inglesi del tema → `node ~/.claude/skills/skiller/skiller.mjs search "<parole>"`. Chiudi con: "/skiller install per installarla, /skiller next per un'altra".
-- `next` → `node ~/.claude/skills/skiller/skiller.mjs next`
-- `install` → `node ~/.claude/skills/skiller/skiller.mjs install`. Se l'output ha ⚠, avvisa l'utente di controllare quei file prima di usarla.
+- `search` (eventuali parole extra = focus): ricava dal contesto della sessione 2-4 parole chiave inglesi del tema → `bash ~/.claude/skills/skiller/run.sh search "<parole>"`. Chiudi con: "/skiller install per installarla, /skiller next per un'altra".
+- `next` → `bash ~/.claude/skills/skiller/run.sh next`
+- `install` → `bash ~/.claude/skills/skiller/run.sh install`. Se l'output ha ⚠, avvisa l'utente di controllare quei file prima di usarla.

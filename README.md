@@ -60,11 +60,11 @@ Il modo più semplice: apri **Claude Code** e incolla questo messaggio.
 
 ```text
 Installa la skill skiller: clona https://github.com/MasterBudz/skiller nella cartella
-~/.claude/skills/skiller, poi controlla che Node e la GitHub CLI (gh) siano installati
-e che gh sia collegato al mio account. Se manca qualcosa, dimmi come sistemarlo.
+~/.claude/skills/skiller, poi lancia /skiller search: se mancano Node, GitHub CLI o l'accesso a GitHub,
+skiller li installa e collega da solo.
 ```
 
-Claude scarica la skill, controlla i requisiti e ti dice se manca qualcosa. Da quel momento `/skiller` è disponibile (se non lo vedi, apri una nuova sessione).
+Claude scarica la skill e al primo avvio installa da solo quello che manca. Da quel momento `/skiller` è disponibile (se non lo vedi, apri una nuova sessione).
 
 <details>
 <summary><b>Preferisci il terminale?</b></summary>
@@ -89,11 +89,17 @@ Per aggiornarla in futuro: `git -C ~/.claude/skills/skiller pull`
 
 ### Requisiti
 
-| | Cosa serve | Perché |
+Nessuno da installare a mano: **al primo avvio skiller controlla e sistema tutto da solo.**
+
+| | Cosa serve | Se manca |
 |---|---|---|
-| 🟢 | [Node.js](https://nodejs.org) 18 o superiore | esegue lo script di ricerca |
-| 🐙 | [GitHub CLI](https://cli.github.com) con `gh auth login` fatto | la ricerca nel codice di GitHub richiede un account |
-| 🤖 | [Claude Code](https://claude.com/claude-code) | dove gira la skill |
+| 🟢 | [Node.js](https://nodejs.org) | lo installa (winget su Windows, Homebrew su macOS, apt su Linux) |
+| 🐙 | [GitHub CLI](https://cli.github.com) | la installa allo stesso modo |
+| 🔑 | Accesso a GitHub | apre il browser con il codice già copiato: incolli e clicchi Authorize |
+| 🤖 | [Claude Code](https://claude.com/claude-code) | è dove gira la skill |
+
+> [!NOTE]
+> L'accesso a GitHub serve perché la ricerca nel codice di GitHub funziona solo con un account (gratuito).
 
 ---
 
@@ -149,6 +155,7 @@ Una skill è codice scritto da altri, quindi skiller fa attenzione:
 ```text
 skiller/
 ├── SKILL.md      # le istruzioni per Claude (poche righe)
+├── run.sh        # avvio: installa le dipendenze mancanti
 ├── skiller.mjs   # ricerca, classifica, next e install
 └── assets/       # la grafica di questa pagina
 ```
