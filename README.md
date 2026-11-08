@@ -112,7 +112,7 @@ Per aggiornarla in futuro: `git -C ~/.claude/skills/skiller pull`
 ## ⚙️ Come funziona
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["💬 /skiller search"] --> B["🧠 Claude legge la chat<br/>e sceglie 2-4 parole chiave"]
     B --> C["🔎 Cerca i file SKILL.md<br/>su GitHub"]
     C --> D["⭐ Classifica per<br/>pertinenza e stelle"]
