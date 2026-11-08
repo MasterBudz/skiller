@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="Esempio di /skiller search in Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15132a"/>
+      <stop offset="1" stop-color="#0d0c1c"/>
+    </linearGradient>
+    <style>
+      .f{font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+      .m{font-family:ui-monospace,"SFMono-Regular","Cascadia Code",Consolas,monospace}
+      .l{opacity:0;animation:in .5s ease forwards}
+      @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+      .cur{animation:bl 1.1s steps(1) infinite}
+      @keyframes bl{50%{opacity:0}}
+    </style>
+  </defs>
+  <rect width="900" height="430" rx="18" fill="url(#bg)" stroke="#ffffff" stroke-opacity=".1"/>
+  <rect width="900" height="44" rx="18" fill="#ffffff" fill-opacity=".04"/>
+  <circle cx="26" cy="22" r="6" fill="#f87171"/><circle cx="46" cy="22" r="6" fill="#fbbf24"/><circle cx="66" cy="22" r="6" fill="#34d399"/>
+  <text x="450" y="27" text-anchor="middle" class="m" font-size="13" fill="#8b87a8">claude code</text>
+
+  <g class="m" font-size="17">
+    <text x="32" y="86" fill="#a78bfa">&gt;</text>
+    <text x="54" y="86" fill="#ffffff">/skiller search</text>
+  </g>
+
+  <g class="l" style="animation-delay:.6s">
+    <rect x="32" y="112" width="836" height="230" rx="14" fill="#ffffff" fill-opacity=".035" stroke="#a78bfa" stroke-opacity=".35"/>
+    <text x="56" y="150" class="f" font-size="22" font-weight="700" fill="#ffffff">1 di 25 · electron-development</text>
+  </g>
+  <g class="f" font-size="16">
+    <g class="l" style="animation-delay:1s">
+      <text x="56" y="192" fill="#e9e5ff"><tspan font-weight="700">Voto:</tspan> <tspan fill="#fde68a">⭐ 49.264 stelle</tspan></text>
+    </g>
+    <g class="l" style="animation-delay:1.3s">
+      <text x="56" y="228" fill="#e9e5ff"><tspan font-weight="700">Cosa fa:</tspan> Master Electron desktop app development with secure IPC,</text>
+      <text x="56" y="252" fill="#e9e5ff">contextIsolation, preload scripts, electron-builder packaging, code signing…</text>
+    </g>
+    <g class="l" style="animation-delay:1.6s">
+      <text x="56" y="292" fill="#e9e5ff"><tspan font-weight="700">Dove:</tspan> <tspan fill="#67e8f9" text-decoration="underline">sickn33/agentic-awesome-skills</tspan></text>
+    </g>
+  </g>
+
+  <g class="l m" style="animation-delay:2s" font-size="15">
+    <text x="32" y="384" fill="#8b87a8">/skiller install per installarla, /skiller next per un'altra</text>
+    <rect class="cur" x="32" y="398" width="10" height="18" rx="2" fill="#e9e5ff"/>
+  </g>
+</svg>

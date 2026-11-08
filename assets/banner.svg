@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="skiller: la skill giusta, al momento giusto">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0a18"/>
+      <stop offset="1" stop-color="#1b1036"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset=".5" stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+    <radialGradient id="g1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    </pattern>
+    <style>
+      .f{font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+      .m{font-family:ui-monospace,"SFMono-Regular","Cascadia Code",Consolas,monospace}
+      .float{animation:fl 7s ease-in-out infinite}
+      .float2{animation:fl 9s ease-in-out infinite reverse}
+      @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+      .cur{animation:bl 1.1s steps(1) infinite}
+      @keyframes bl{50%{opacity:0}}
+      .star{animation:tw 3s ease-in-out infinite}
+      @keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+    </style>
+  </defs>
+  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="380" rx="24" fill="url(#grid)"/>
+  <circle class="float" cx="980" cy="90" r="220" fill="url(#g1)"/>
+  <circle class="float2" cx="180" cy="330" r="200" fill="url(#g2)"/>
+
+  <g fill="#fde68a">
+    <path class="star" d="M1040 250l6 14 15 1-11 10 3 15-13-8-13 8 3-15-11-10 15-1z"/>
+    <path class="star" style="animation-delay:1s" d="M1110 170l4 9 10 1-7 6 2 10-9-5-9 5 2-10-7-6 10-1z"/>
+    <path class="star" style="animation-delay:2s" d="M960 300l3 7 7 1-5 4 1 7-6-4-6 4 1-7-5-4 7-1z"/>
+  </g>
+
+  <text x="80" y="128" class="m" font-size="20" fill="#a78bfa" letter-spacing="4">CLAUDE CODE SKILL</text>
+  <text x="74" y="228" class="f" font-size="112" font-weight="800" fill="url(#txt)" letter-spacing="-3">skiller</text>
+  <text x="80" y="276" class="f" font-size="28" fill="#e9e5ff" opacity=".9">La skill giusta, al momento giusto.</text>
+
+  <g transform="translate(80 308)" class="m" font-size="17">
+    <rect width="182" height="36" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#a78bfa" stroke-opacity=".5"/>
+    <text x="22" y="24" fill="#f0abfc">/skiller search</text>
+    <rect x="196" width="160" height="36" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#67e8f9" stroke-opacity=".5"/>
+    <text x="218" y="24" fill="#67e8f9">/skiller next</text>
+    <rect x="370" width="188" height="36" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#86efac" stroke-opacity=".5"/>
+    <text x="392" y="24" fill="#86efac">/skiller install</text>
+    <rect class="cur" x="572" y="8" width="11" height="20" rx="2" fill="#e9e5ff"/>
+  </g>
+
+  <g transform="translate(770 120)">
+    <rect width="340" height="170" rx="18" fill="#0b0a18" fill-opacity=".75" stroke="#ffffff" stroke-opacity=".12"/>
+    <circle cx="24" cy="24" r="6" fill="#f87171"/><circle cx="44" cy="24" r="6" fill="#fbbf24"/><circle cx="64" cy="24" r="6" fill="#34d399"/>
+    <text x="24" y="66" class="f" font-size="19" font-weight="700" fill="#ffffff">1 di 25 · electron-dev</text>
+    <text x="24" y="98" class="m" font-size="15" fill="#fde68a">★ 49.264 stelle</text>
+    <rect x="24" y="114" width="250" height="8" rx="4" fill="#ffffff" fill-opacity=".14"/>
+    <rect x="24" y="132" width="190" height="8" rx="4" fill="#ffffff" fill-opacity=".14"/>
+    <rect x="24" y="150" width="120" height="8" rx="4" fill="#a78bfa" fill-opacity=".6"/>
+  </g>
+</svg>
