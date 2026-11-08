@@ -29,7 +29,7 @@ if ! gh auth status -h github.com >/dev/null 2>&1; then
   CODE="$(grep -o '[A-Z0-9]\{4\}-[A-Z0-9]\{4\}' "$LOG" | head -1)"
   URL=https://github.com/login/device
   { have cmd.exe && cmd.exe /c start "" "$URL"; } >/dev/null 2>&1 || { have open && open "$URL"; } || { have xdg-open && xdg-open "$URL"; } >/dev/null 2>&1
-  echo "🔑 Collega GitHub: nel browser che si è aperto ($URL) incolla il codice **$CODE** (è già negli appunti, Ctrl+V) e clicca Authorize.""
+  echo "🔑 Collega GitHub: nel browser che si è aperto ($URL) incolla il codice **$CODE** (è già negli appunti, Ctrl+V) e clicca Authorize."
   wait "$PID"
   gh auth status -h github.com >/dev/null 2>&1 && echo "✅ GitHub collegato" || { echo "❌ Accesso a GitHub non completato. Rilancia il comando."; exit 0; }
 fi
