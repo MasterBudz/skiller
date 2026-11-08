@@ -13,7 +13,7 @@
 ![Token](https://img.shields.io/badge/token-pochissimi-f0abfc?style=for-the-badge&labelColor=0b0a18)
 ![License](https://img.shields.io/badge/license-MIT-67e8f9?style=for-the-badge&labelColor=0b0a18)
 
-[Cos'è](#-cosè) · [Installa con un prompt](#-installa-con-un-prompt) · [Comandi](#-comandi) · [Come funziona](#-come-funziona) · [Sicurezza](#-sicurezza)
+[Cos'è](#-cosè) · [Installa con un prompt](#-installa-con-un-prompt) · [Comandi](#️-comandi) · [Come funziona](#️-come-funziona) · [Sicurezza](#️-sicurezza)
 
 </div>
 
